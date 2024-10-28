@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.jpg" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/foto.jpg" alt="foto">
+      </div>
+      <div class="information">
+        <h1>
+          Angel Andrés gelvis López 
+        </h1>
+        <span>
+          @angel 
+        </span>
+        <p> comunicativo|analítico|etica de trabajo|empatía|estudiado en Harvard|10 años de experiencia</p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+         
+soy profesional comprometido con la justicia y el bienestar de sus clientes. Con una sólida formación en derecho y una amplia experiencia en diversas áreas legales, Ángel ha demostrado ser un defensor apasionado de los derechos de las personas.
+enfoque analítico y mi habilidad para comunicarse de manera clara y efectiva me han convertido en un referente en su campo. Además, mi empatía y comprensión hacia las necesidades de mis clientes destacan en cada caso que maneja, asegurando que cada uno reciba la atención y el apoyo que merece.
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://mx.indeed.com/orientacion-profesional/como-encontrar-empleo/que-hace-un-abogado" class="social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://www.ambitojuridico.com/noticias/constitucional-y-derechos-humanos/10-libros-fundamentales-para-los-abogados" class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a href="https://vrpgestion.com/20-cosas-sobre-abogados/" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+    <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+    </div>
+    </main>
+   <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+   </script> 
+</div>
+</body>
+</html>
